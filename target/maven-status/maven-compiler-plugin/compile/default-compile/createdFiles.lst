@@ -1,0 +1,6 @@
+com\qa\page\DashBoard.class
+com\qa\listener\HRMTestNGListener.class
+com\qa\page\LogInPage.class
+com\qa\base\TestBase.class
+com\qa\listener\HRMExtentReportListener.class
+com\qa\util\TestUtiles.class

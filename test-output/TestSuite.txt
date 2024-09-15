@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.852 s <<< FAILURE! - in TestSuite
+validateLogInPagetitle(com.qa.test.LogInTest)  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.AssertionError: expected [OrangeHRM] but found [Google]
+	at com.qa.test.LogInTest.validateLogInPagetitle(LogInTest.java:47)
+

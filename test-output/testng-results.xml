@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9884" started-at="2024-08-24T18:45:12 IST" finished-at="2024-08-24T18:45:22 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="9884" started-at="2024-08-24T18:45:12 IST" finished-at="2024-08-24T18:45:22 IST">
+      <class name="com.qa.test.LogInTest">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.qa.test.LogInTest@51c8530f]" name="startTest" is-config="true" duration-ms="256" started-at="2024-08-24T18:45:12 IST" finished-at="2024-08-24T18:45:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LogInTest@51c8530f]" name="setUp" is-config="true" duration-ms="8576" started-at="2024-08-24T18:45:12 IST" finished-at="2024-08-24T18:45:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLogInPagetitle()[pri:1, instance:com.qa.test.LogInTest@51c8530f]" name="validateLogInPagetitle" duration-ms="19" started-at="2024-08-24T18:45:21 IST" finished-at="2024-08-24T18:45:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogInPagetitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LogInTest@51c8530f]" name="tearDown" is-config="true" duration-ms="669" started-at="2024-08-24T18:45:21 IST" finished-at="2024-08-24T18:45:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.qa.test.LogInTest@51c8530f]" name="endTest" is-config="true" duration-ms="330" started-at="2024-08-24T18:45:22 IST" finished-at="2024-08-24T18:45:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.qa.test.LogInTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
