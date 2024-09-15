@@ -24,7 +24,7 @@ public class LogInTest extends TestBase {
 
 	public LogInTest() {
 		super();
-	}
+	} 
 
 //	@BeforeClass
 //	public static void startTest() {
