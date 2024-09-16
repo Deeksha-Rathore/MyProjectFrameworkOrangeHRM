@@ -20,8 +20,7 @@ public class DashBoardPage extends TestBase {
 	@FindBy(xpath = "//div//li[@class='oxd-userdropdown']")
 	WebElement userIdentify;
 	
-	@FindBy(xpath = "//div//ul[@class = 'oxd-main-menu']/li[@class='oxd-main-menu-item-wrapper']")
-	WebElement sideBarHeaders;
+	By sideBarHeaders = By.xpath("//div//ul[@class = 'oxd-main-menu']/li[@class='oxd-main-menu-item-wrapper']");
 	
 	public DashBoardPage() {
 		PageFactory.initElements(driver, this);
@@ -41,7 +40,7 @@ public class DashBoardPage extends TestBase {
 	public List<String> getSideBarHeaders() throws InterruptedException{
 		Thread.sleep(5000);
 		
-		List<WebElement> list = driver.findElements((By) sideBarHeaders);
+		List<WebElement> list = driver.findElements(sideBarHeaders);
 		
 		List<String> headerList = new ArrayList<String>();
 		

@@ -24,7 +24,7 @@ public class LogInTest extends TestBase {
 
 	public LogInTest() {
 		super();
-	} 
+	}
 
 //	@BeforeClass
 //	public static void startTest() {
@@ -61,18 +61,23 @@ public class LogInTest extends TestBase {
 		extentTest.log(Status.PASS, "Title Matched");
 	}
 
-	/*
-	 * @Test(priority = 2) public void validateHrmLogo() { boolean flag =
-	 * loginPage.ValidatehrmLogo(); Assert.assertTrue(flag); }
-	 * 
-	 * @Test(priority = 3) public void login() { homepage =
-	 * loginPage.logIn(prop.getProperty("username"), prop.getProperty("password"));
-	 * }
-	 * 
-	 * @Test(priority = 4) public void inValidCredencial() { boolean flag =
-	 * loginPage.invalidCredencial("testing", "admin12345");
-	 * Assert.assertTrue(flag); }
-	 */
+	@Test(priority = 2)
+	public void validateHrmLogo() {
+		boolean flag = loginPage.ValidatehrmLogo();
+		Assert.assertTrue(flag);
+	}
+
+	@Test(priority = 3)
+	public void login() {
+		homepage = loginPage.logIn(prop.getProperty("username"), prop.getProperty("password"));
+	}
+
+	@Test(priority = 4)
+	public void inValidCredencial() {
+		boolean flag = loginPage.invalidCredencial("testing", "admin12345");
+		Assert.assertTrue(flag);
+	}
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

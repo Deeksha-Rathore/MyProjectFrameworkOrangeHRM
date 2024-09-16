@@ -29,21 +29,21 @@ public class DashBoardTest extends TestBase {
 		loginPage = new LogInPage();
 		dashboardPage = loginPage.logIn(prop.getProperty("username"), prop.getProperty("password"));
 	}
-//	@Test(priority = 1)
-//	public void verifyDashboardtitlePage() {
-//		 String titleOfDashPage=dashboardPage.verifyDashboardtitle();
-//		Assert.assertEquals(titleOfDashPage, "OrangeHRM");
-//	}
-//	@Test(priority = 2)
-//	public void verifyDashboardheader() {
-//		boolean flag =dashboardPage.validateDashBoardHeader();
-//		Assert.assertTrue(flag);
-//	}
-//	@Test(priority = 3)
-//	public void toVerifyTheUserName() {
-//	   boolean flag = dashboardPage.toVerifyTheUserName();
-//	   Assert.assertTrue(flag);
-//	}
+	@Test(priority = 1)
+	public void verifyDashboardtitlePage() {
+		 String titleOfDashPage=dashboardPage.verifyDashboardtitle();
+		Assert.assertEquals(titleOfDashPage, "OrangeHRM");
+	}
+	@Test(priority = 2)
+	public void verifyDashboardheader() {
+		boolean flag =dashboardPage.validateDashBoardHeader();
+		Assert.assertTrue(flag);
+	}
+	@Test(priority = 3)
+	public void toVerifyTheUserName() {
+	   boolean flag = dashboardPage.toVerifyTheUserName();
+	   Assert.assertTrue(flag);
+	}
 
 	@Test(priority = 1)
 	public void verify_Sidebar_Headers() throws InterruptedException {

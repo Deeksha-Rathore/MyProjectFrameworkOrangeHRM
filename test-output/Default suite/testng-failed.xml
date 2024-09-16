@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.DashBoardTest">
+      <class name="com.qa.test.LogInTest">
         <methods>
+          <include name="startTest"/>
+          <include name="validateHrmLogo"/>
           <include name="setUp"/>
-          <include name="verify_Sidebar_Headers"/>
-          <include name="teardDown"/>
+          <include name="endTest"/>
+          <include name="inValidCredencial"/>
+          <include name="login"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.test.DashBoardTest -->
+      </class> <!-- com.qa.test.LogInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

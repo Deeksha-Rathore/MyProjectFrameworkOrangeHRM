@@ -37,7 +37,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\Ankit_Rathore\\eclipse-workspace\\MyNewOrangeHRMProjectFramework\\src\\main\\java\\com\\qa\\config\\config.properties");
+					"C:\\Users\\Ankit_Rathore\\eclipse-workspace\\Git\\MyProjectFrameworkOrangeHRM\\src\\main\\java\\com\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -69,7 +69,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtiles.PAGE_LOADED_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtiles.IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		logger.info("Launched the URL: " + prop.getProperty("url"));
+	//	logger.info("Launched the URL: " + prop.getProperty("url"));
 	}
 
 		public static String captureScreenShot(WebDriver driver) throws IOException {

@@ -6,9 +6,10 @@
 		<listener class-name="com.qa.listener.HRMTestNGListener" />
 	</listeners>
 
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Test" >
 		<classes>
 			<class name="com.qa.test.LogInTest" />
+			<class name="com.qa.test.DashBoardTest" />	
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
